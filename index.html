@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONGRE-Gestion des projets</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SONGRE</div>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="nouveau_projet.html">Nouveau Projet</a></li>
+        <li><a href="Qui_somme_nous.html">Qui somme nous?</a></li>
+      </ul>
+    </nav>
+    <!-- Section Accueil -->
+    <div class="container-fluid mt-4 section main-content" id="accueil">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h1 class="display-4 fw-bold text-primary">Bienvenue sur SONGRE</h1>
+          <p class="lead text-muted">
+            Organisez vos projets avec un tableau Kanban
+          </p>
+        </div>
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-header text-center">
+                  <h4>Inscription</h4>
+                </div>
+                <div class="card-body">
+                  <form action="nouveau_projet.html">
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Adresse e-mail</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Entrez votre e-mail"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label"
+                        >Mot de passe</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Créez un mot de passe"
+                        required
+                      />
+                    </div>
+                    <div class="d-grid gap-2">
+                      <a href="nouveau_projet.html" class="btn btn-primary">
+                        S'inscrire
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 footer-section">
+            <h5>SONGRE</h5>
+            <p class="footer-desc small">
+              Gestion simple et efficace de projets.
+            </p>
+          </div>
+          <div class="col-md-3 footer-section">
+            <h5>Liens</h5>
+            <ul class="footer-links small">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="nouveau_projet.html">Nouveau Projet</a></li>
+              <li><a href="Qui_somme_nous.html">À Propos</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-section">
+            <h5>Contact</h5>
+            <div class="contact-info small">
+              <p class="mb-1">📞 +226 66 91 33 22</p>
+              <p class="mb-1">📞 +226 66 95 14 97</p>
+              <p>✉️ info@songre.com</p>
+            </div>
+          </div>
+          <div class="col-md-3 footer-section">
+            <h5>Réseaux</h5>
+            <div class="social-links">
+              <a href="#" class="social-icon">f</a>
+              <a href="#" class="social-icon">𝕏</a>
+              <a href="#" class="social-icon">📷</a>
+              <a href="#" class="social-icon">in</a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom text-center">
+          <p class="small mb-0">&copy; 2026 SONGRE. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nouveau Projet - SONGRE</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SONGRE</div>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="nouveau_projet.html">Nouveau Projet</a></li>
+        <li><a href="Qui_somme_nous.html">Qui somme nous?</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section Kanban Board -->
+    <div class="container-fluid mt-4 main-content">
+      <div class="kanban-header">
+        <h1 class="display-4 fw-bold text-primary">Tableau de Bord</h1>
+        <p class="lead text-muted">Gestion simple des tâches</p>
+        <div class="kanban-controls">
+          <input
+            type="text"
+            class="form-control search-box"
+            id="projectSearch"
+            placeholder="🔍 Rechercher..."
+          />
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#newProjectModal"
+          >
+            + Nouveau
+          </button>
+        </div>
+      </div>
+
+      <div class="kanban-board-wrapper">
+        <div class="kanban-board">
+          <div class="row">
+            <!-- Colonne À FAIRE -->
+            <div class="col-md-4">
+              <div class="kanban-column">
+                <div class="column-header bg-danger">
+                  <h3>À FAIRE <span class="badge-count">0</span></h3>
+                </div>
+                <div class="column-content">
+                  <!-- Les tâches s'afficheront ici -->
+                </div>
+                <div class="add-card-btn">+ Ajouter une tâche</div>
+              </div>
+            </div>
+
+            <!-- Colonne EN COURS -->
+            <div class="col-md-4">
+              <div class="kanban-column">
+                <div class="column-header bg-warning">
+                  <h3>EN COURS <span class="badge-count">0</span></h3>
+                </div>
+                <div class="column-content">
+                  <!-- Les tâches s'afficheront ici -->
+                </div>
+                <div class="add-card-btn">+ Ajouter une tâche</div>
+              </div>
+            </div>
+
+            <!-- Colonne TERMINÉ -->
+            <div class="col-md-4">
+              <div class="kanban-column">
+                <div class="column-header bg-success">
+                  <h3>TERMINÉ <span class="badge-count">0</span></h3>
+                </div>
+                <div class="column-content">
+                  <!-- Les tâches s'afficheront ici -->
+                </div>
+                <div class="add-card-btn">+ Ajouter une tâche</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 footer-section">
+            <h5>SONGRE</h5>
+            <p class="footer-desc">
+              Organisez vos projets avec un tableau Kanban moderne et intuitif.
+            </p>
+          </div>
+          <div class="col-md-3 footer-section">
+            <h5>Liens rapides</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="nouveau_projet.html">Nouveau Projet</a></li>
+              <li><a href="Qui_somme_nous.html">Qui sommes nous?</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer-section">
+            <h5>Contact</h5>
+            <div class="contact-info">
+              <p><i class="phone">📞</i> +226 66 91 33 22</p>
+              <p><i class="phone">📞</i> +226 66 95 14 97</p>
+              <p><i class="email">✉️</i> info@songre.com</p>
+            </div>
+          </div>
+          <div class="col-md-3 footer-section">
+            <h5>Nous suivre</h5>
+            <div class="social-links">
+              <a href="#" class="social-icon">f</a>
+              <a href="#" class="social-icon">𝕏</a>
+              <a href="#" class="social-icon">📷</a>
+              <a href="#" class="social-icon">in</a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom text-center">
+          <p>&copy; 2026 SONGRE. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
